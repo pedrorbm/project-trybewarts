@@ -1,5 +1,4 @@
 * {
-  /* border: 0; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,7 +28,7 @@ main {
   height: 500px;
 }
 
-#input-name, #input-lastname, #input-email, #house {
+#input-name , #input-lastname , #input-email , #house {
   width: 40%;
 }
 
@@ -42,10 +41,6 @@ main {
 }
 
 #radio-container {
-  width: 200px;
-}
-
-#radio-container {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -54,7 +49,7 @@ main {
 #div-checkbox {
   display: flex;
   flex-wrap: wrap;
-} 
+}
 
 #check-container {
   width: 40%;
@@ -68,4 +63,9 @@ main {
 
 #family-container {
   display: flex;
+}
+
+#txt-comment {
+  width: 100%;
+  resize: none;
 }
