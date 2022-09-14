@@ -30,9 +30,17 @@ main {
 }
 
 #input-name {
-  width: 335px;
+  width: 40%;
 }
 
 #input-lastname {
-  width: 335px;
+  width: 40%;
+}
+
+#input-email {
+  width: 40%;
+}
+
+#house {
+  width: 40%;
 }
