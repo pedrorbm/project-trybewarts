@@ -33,7 +33,39 @@ main {
   width: 40%;
 }
 
-#family-container div:first-child {
+#input-lastname {
+  margin-left: 30px;
+}
+
+#house {
+  margin-left: 30px;
+}
+
+#radio-container {
+  width: 200px;
+}
+
+#radio-container {
   display: flex;
   flex-direction: column;
+  width: 40%;
+}
+
+#div-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+#check-container {
+  width: 40%;
+  display: flex;
+  margin-left: 35px;
+}
+
+#input-radio {
+  width: 200px;
+}
+
+#family-container {
+  display: flex;
 }
