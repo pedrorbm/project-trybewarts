@@ -40,4 +40,22 @@ function styleForm(data) {
   }
 }
 
-styleForm('data');
+btnSubmit.addEventListener('click', (click) => {
+  click.preventDefault();
+  const namePlusLastName = `${document.querySelector('#input-name').value}
+  ${document.querySelector('#input-lastname').value}`;
+  const mail = document.querySelector('#input-email').value;
+  const house = document.querySelector('#house').value;
+  const fam = document.querySelector('input[name="family"]:checked').value;
+  const checkboxes = document.querySelectorAll('.subject');
+  const mat = [];
+  for (let index = 0; index < checkboxes.length; index += 1) {
+    if (checkboxes[index].checked === true) {
+      mat.push(checkboxes[index].value);
+    }
+  }
+  const aval = document.querySelector('input[name="rate"]:checked').value;
+  const obs = document.querySelector('#textarea').value;
+  const data = [namePlusLastName, mail, house, fam, mat.join(', '), aval, obs];
+  styleForm(data);
+});
