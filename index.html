@@ -13,14 +13,23 @@
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logotipo-trybewarts">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login" action="" method="get">
+    <form class="trybewarts-login" action="">
       <input id="email" type="text" name="email" placeholder="Email">
       <input id="password" type="text" name="password" placeholder="Senha">
       <button type="submit">Entrar</button>
     </form>
   </header>
   <main>
-    <form id="evaluation-form" action="" method="get">
+    <form id="form-data">
+      <label for="">Nome: </label>
+      <label for="">Email: </label>
+      <label for="">Casa: </label>
+      <label for="">Família: </label>
+      <label for="">Matérias: </label>
+      <label for="">Avaliação: </label>
+      <label for="">Observações: </label>
+    </form>
+    <form id="evaluation-form" action="">
       <section id="h1-form">
         <h1>Formulário de avaliação</h1>
       </section>
@@ -28,16 +37,16 @@
         <input id="input-name" class="input-default" type="text" placeholder="Nome" required>
         <input id="input-lastname" class="input-default" type="text" placeholder="Sobrenome" required>
       </section>
-      <section id="input-checkbox" class="section">
+      <section>
         <input id="input-email" class="input-default" type="text" placeholder="Email" required>
-        <select id="house" class="input-default" name="house" required>
+        <select id="house" class="input-default" name="house">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
           <option id="corvinode-house" value="Corvinode">Corvinode</option>
           <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
       </section>
-      <hr>
+      <hr id="first-hr">
       <section id="family-container" class="section">
         <section id="radio-container">
           <div id="input-radio">
@@ -113,13 +122,14 @@
         <input id="rate10" type="radio" name="rate" value="10">
         <label for="rate10">10</label>
       </section>
-      <section class="section">
+      <section class="section-textarea">
         <label class="textarea" for="">Deixe seu comentário:</label>
-        <textarea id="txt-comment" maxlength="500" rows="7"></textarea>
+        <textarea id="textarea" maxlength="500" rows="7" required></textarea>
+        <label id="counter" for="">500</label>
       </section>
-      <section class="section">
+      <section id="section-infos">
         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
-        <input id="agreement" type="checkbox" name="agreement">
+        <input id="agreement" type="checkbox" name="agreement" required>
       </section>
       <button id="submit-btn" type="submit" disabled>Enviar</button>
     </form>

@@ -83,6 +83,10 @@ hr {
   margin-bottom: 10px;
 }
 
+#first-hr {
+  margin-top: 20px;
+}
+
 .section {
   margin-bottom: 15px;
 }
@@ -135,6 +139,13 @@ hr {
   font-size: 18px;
 }
 
+#section-infos {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
 #div-checkbox {
   display: flex;
   flex-wrap: wrap;
@@ -158,7 +169,7 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   width: 200px;
-  height: 130px;
+  height: 136px;
 }
 
 #evaluation {
@@ -171,7 +182,7 @@ hr {
   display: flex;
 }
 
-#txt-comment {
+#textarea {
   width: 100%;
   resize: none;
 }
@@ -193,4 +204,8 @@ footer {
   padding-bottom: 15px;
   background-color: rgb(60, 64, 74);
   color: white;
+}
+
+#form-data {
+  display: none;
 }
