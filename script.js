@@ -33,8 +33,10 @@ txtArea.addEventListener('input', (input) => {
 
 function styleForm(data) {
   evalForm.style.display = 'none';
-  hiddenForm.style.flexDirection = 'column';
   hiddenForm.style.display = 'flex';
+  hiddenForm.style.flexDirection = 'column';
+  hiddenForm.style.justifyContent = 'flex-start';
+  hiddenForm.style.alignItems = 'flex-start';
   for (let index = 0; index < hiddenForm.children.length; index += 1) {
     hiddenForm.children[index].innerHTML += data[index];
   }
