@@ -1,23 +1,90 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: 'Radal';
+}
+
+@font-face {
+  font-family: 'Radal';
+  src: url('./libs/Radal.ttf');
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   align-items: center;
+  justify-content: space-between;
+  color: white;
+  height: 110px;
 }
 
-hr {
-  width: 100%;
+.header img {
+  width: 100px;
+  margin-left: 2%;
 }
 
-.trybewarts-login {
+.header .trybewarts-login {
   display: flex;
+  margin-right: 2%;
+}
+
+.header input {
+  margin: 10px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: solid white;
+}
+
+.header button {
+  padding: 0 20px;
+  height: 34px;
+  background-color: purple;
+  border-radius: 5px;
+  border: solid purple;
+  color: white;
+}
+
+header form {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: xxx-large;
 }
 
 main {
   display: flex;
+  justify-content: center;
+  margin: 40px 60px;
+}
+
+main #trybewarts-forms-logo {
+  align-self: center;
+  height: 500px;
+}
+
+main h1 {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+#h1-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+  height: 3px;
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+.section {
+  margin-bottom: 15px;
 }
 
 #evaluation-form {
@@ -26,13 +93,13 @@ main {
   flex-direction: column;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+.input-default {
+  width: 47%;
+  height: 30px;
+  border-radius: 5px;
+  border: solid purple 2px;
 }
 
-#input-name , #input-lastname , #input-email , #house {
-  width: 40%;
-}
 
 #input-lastname {
   margin-left: 30px;
@@ -48,19 +115,56 @@ main {
   width: 40%;
 }
 
+#label-family {
+  font-size: 18px;
+}
+
+#label-content {
+  font-size: 18px;
+}
+
+#label-rate {
+  font-size: 18px;
+}
+
+#label-infos {
+  font-size: 18px;
+}
+
+.textarea {
+  font-size: 18px;
+}
+
 #div-checkbox {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  width: 200px;
+  height: 50px;
+}
+
+#div-checkbox div {
+  margin-top: 20px;
 }
 
 #check-container {
   width: 40%;
   display: flex;
-  margin-left: 35px;
+  margin-left: 100px;
 }
 
 #input-radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 200px;
+  height: 130px;
+}
+
+#evaluation {
+  display: flex;
+  justify-content: space-between;
+  width: 670px;
 }
 
 #family-container {
@@ -72,7 +176,21 @@ main {
   resize: none;
 }
 
+#submit-btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: solid purple;
+  background-color: purple;
+  color: white;
+}
+
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(60, 64, 74);
+  color: white;
 }

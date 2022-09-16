@@ -21,13 +21,16 @@
   </header>
   <main>
     <form id="evaluation-form" action="" method="get">
-      <section>
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+      <section id="h1-form">
+        <h1>Formulário de avaliação</h1>
       </section>
-      <section>
-        <input id="input-email" type="text" placeholder="Email">
-        <select id="house" name="house">
+      <section class="section">
+        <input id="input-name" class="input-default" type="text" placeholder="Nome" required>
+        <input id="input-lastname" class="input-default" type="text" placeholder="Sobrenome" required>
+      </section>
+      <section id="input-checkbox" class="section">
+        <input id="input-email" class="input-default" type="text" placeholder="Email" required>
+        <select id="house" class="input-default" name="house" required>
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
           <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -35,7 +38,7 @@
         </select>
       </section>
       <hr>
-      <section id="family-container">
+      <section id="family-container" class="section">
         <section id="radio-container">
           <div id="input-radio">
             <label id="label-family" for="">Qual sua família?</label>
@@ -54,38 +57,40 @@
           </div>
         </section>
         <section id="check-container">
-          <div id="div-checkbox">
+          <div id="label-checkbox">
             <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-            <div>
-              <input class="subject" id="HoFs" type="checkbox" value="HoFs">
-              <label for="HoFs">HoFs</label>
-            </div>
-            <div>
-              <input class="subject" id="Jest" type="checkbox" value="Jest">
-              <label for="Jest">Jest</label>
-            </div>
-            <div>
-              <input class="subject" id="Promises" type="checkbox" value="Promises">
-              <label for="Promises">Promises</label>
-            </div>
-            <div>
-              <input class="subject" id="React" type="checkbox" value="React">
-              <label for="React">React</label>
-            </div>
-            <div>
-              <input class="subject" id="SQL" type="checkbox" value="SQL">
-              <label for="SQL">SQL</label>
-            </div>
-            <div>
-              <input class="subject" id="Python" type="checkbox" value="Python">
-              <label for="Python">Python</label>
+            <div id="div-checkbox">
+              <div>
+                <input class="subject" id="HoFs" type="checkbox" value="HoFs">
+                <label for="HoFs">HoFs</label>
+              </div>
+              <div>
+                <input class="subject" id="Jest" type="checkbox" value="Jest">
+                <label for="Jest">Jest</label>
+              </div>
+              <div>
+                <input class="subject" id="Promises" type="checkbox" value="Promises">
+                <label for="Promises">Promises</label>
+              </div>
+              <div>
+                <input class="subject" id="React" type="checkbox" value="React">
+                <label for="React">React</label>
+              </div>
+              <div>
+                <input class="subject" id="SQL" type="checkbox" value="SQL">
+                <label for="SQL">SQL</label>
+              </div>
+              <div>
+                <input class="subject" id="Python" type="checkbox" value="Python">
+                <label for="Python">Python</label>
+              </div>
             </div>
           </div>
           </div>
         </section>
       </section>
       <hr>
-      <section>
+      <section id="evaluation" class="section">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
         <input id="rate1" type="radio" name="rate" value="1">
         <label for="rate1">1</label>
@@ -108,13 +113,13 @@
         <input id="rate10" type="radio" name="rate" value="10">
         <label for="rate10">10</label>
       </section>
-      <section>
+      <section class="section">
         <label class="textarea" for="">Deixe seu comentário:</label>
         <textarea id="txt-comment" maxlength="500" rows="7"></textarea>
       </section>
-      <section>
-        <input id="agreement" type="checkbox" name="agreement">
+      <section class="section">
         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+        <input id="agreement" type="checkbox" name="agreement">
       </section>
       <button id="submit-btn" type="submit" disabled>Enviar</button>
     </form>
