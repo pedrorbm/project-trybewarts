@@ -10,7 +10,7 @@
   src: url('./libs/radal.ttf');
 }
 
-.header {
+header {
   display: flex;
   background-color: rgb(50, 167, 145);
   align-items: center;
@@ -19,24 +19,24 @@
   height: 109px;
 }
 
-.header img {
+header img {
   width: 100px;
   margin-left: 2%;
 }
 
-.header .trybewarts-login {
+header .trybewarts-login {
   display: flex;
   margin-right: 2%;
 }
 
-.header input {
+header input {
   margin: 10px;
   padding: 5px 20px;
   border-radius: 5px;
   border: solid white;
 }
 
-.header button {
+header button {
   padding: 0 20px;
   height: 34px;
   background-color: purple;
@@ -60,6 +60,10 @@ main {
   margin: 40px 60px;
 }
 
+main #form-data {
+  display: none;
+}
+
 main #trybewarts-forms-logo {
   align-self: center;
   height: 500px;
@@ -70,34 +74,34 @@ main h1 {
   margin-bottom: 30px;
 }
 
-#h1-form {
+main #h1-form {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-hr {
+main hr {
   width: 100%;
   height: 3px;
   background-color: grey;
   margin-bottom: 10px;
 }
 
-#first-hr {
+main #first-hr {
   margin-top: 20px;
 }
 
-.section {
+main .section {
   margin-bottom: 15px;
 }
 
-#evaluation-form {
+main #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
 
-.input-default {
+main .input-default {
   width: 47%;
   height: 30px;
   border-radius: 5px;
@@ -105,48 +109,47 @@ hr {
 }
 
 
-#input-lastname {
+main #input-lastname {
   margin-left: 30px;
 }
 
-#house {
+main #house {
   margin-left: 30px;
 }
 
-#radio-container {
+main #radio-container {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
 
-#label-family {
+main #label-family {
   font-size: 18px;
 }
 
-#label-content {
+main #label-content {
   font-size: 18px;
 }
 
-#label-rate {
+main #label-rate {
   font-size: 18px;
 }
 
-#label-infos {
+main #label-infos {
   font-size: 18px;
 }
 
-.textarea {
+main .textarea {
   font-size: 18px;
 }
 
-#section-infos {
+main #section-infos {
   font-size: 18px;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
-
-#div-checkbox {
+main #div-checkbox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -154,17 +157,17 @@ hr {
   height: 50px;
 }
 
-#div-checkbox div {
+main #div-checkbox div {
   margin-top: 20px;
 }
 
-#check-container {
+main #check-container {
   width: 40%;
   display: flex;
   margin-left: 100px;
 }
 
-#input-radio {
+main #input-radio {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -172,22 +175,22 @@ hr {
   height: 136px;
 }
 
-#evaluation {
+main #evaluation {
   display: flex;
   justify-content: space-between;
   width: 670px;
 }
 
-#family-container {
+main #family-container {
   display: flex;
 }
 
-#textarea {
+main #textarea {
   width: 100%;
   resize: none;
 }
 
-#submit-btn {
+main #submit-btn {
   padding: 10px;
   border-radius: 5px;
   border: solid purple;
@@ -204,8 +207,4 @@ footer {
   padding-bottom: 15px;
   background-color: rgb(60, 64, 74);
   color: white;
-}
-
-#form-data {
-  display: none;
 }
