@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Radal';
+  font-family: radal, sans-serif;
 }
 
 @font-face {
-  font-family: 'Radal';
-  src: url('./libs/Radal.ttf');
+  font-family: radal;
+  src: url('./libs/radal.ttf');
 }
 
 .header {
